@@ -11,6 +11,7 @@ conn = redis.from_url(redis_url)
 
 if __name__ == '__main__':
 	with Connection(conn):
+		print "Worker.py is Running"
 		worker = Worker(list(map(Queue,listen)))
 		worker.work()
 		

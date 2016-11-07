@@ -1,7 +1,16 @@
 import os
+from sys import executable
+from subprocess import Popen
+
+Popen(["nohup","redis-server"])
+Popen(["python","worker.py"])
+
 #os.system("redis-server")
 #os.system("python worker.py")
-os.system("redis-server && python worker.py && python manage.py runserver")
+
+
+
+os.system("python manage.py runserver")
 # python manage.py db init
 # python manage.py db migrate
 # python manage.py db upgrade
