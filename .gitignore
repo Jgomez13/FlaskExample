@@ -1,11 +1,22 @@
+#----------------------PROJECT .gitignore--------------------------------
+
+.idea #JETBrains stuff
+nohup.out
+migrations/versions/ # specific to each database on users system.
+
+#----------------------GENERIC .gitignore--------------------------------
+
 # Byte-compiled / optimized / DLL files
+#------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 
 # C extensions
+#------------------------------------------------------------------------
 *.so
 
 # Distribution / packaging
+#------------------------------------------------------------------------
 .Python
 env/
 bin/
@@ -61,11 +72,3 @@ coverage.xml
 docs/_build/
 
 *.DS_Store
-
-#JETBrains stuff
-#------------------------------------------------------------------------
-.idea
-
-#nohup
-#------------------------------------------------------------------------
-nohup.out
