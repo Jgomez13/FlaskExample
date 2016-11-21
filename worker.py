@@ -14,4 +14,4 @@ if __name__ == '__main__':
 		print ("Worker.py is Running")
 		worker = Worker(list(map(Queue,listen)))
 		worker.work()
-		
+	
